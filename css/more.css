@@ -29,6 +29,7 @@
 .more .more__title{
     opacity: 0.8;
     margin-bottom: 20px;
+    font-size: 12px;
 }
 
 .suggestion .suggestion__title {
@@ -44,6 +45,6 @@
 }
 
 .suggestion__icon {
-    font-size: 28px;
+    font-size: 20px;
     color: white;
 }
