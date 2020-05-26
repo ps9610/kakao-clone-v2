@@ -11,3 +11,8 @@
     opacity: 0.6;
     margin-bottom: 12px;
 }
+
+.friends li:nth-child(3), 
+.chats li:nth-child(1){
+    margin-top: 20px;
+}
