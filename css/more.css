@@ -62,7 +62,11 @@
     cursor: pointer;
     line-height: 30px;
 }
-
+/*
+항상 부모요소에 felx - wrap을 해준 다음에
+자식 요소에 margin으로 조절하면서
+div, span, li등의 요소들 정렬하기...
+*/
 .more__btn-list .more__btn {
     margin-bottom: 30px;
 }

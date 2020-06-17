@@ -12,6 +12,7 @@ function realTime(){
     
 function init (){
     realTime();
+    setInterval(realTime, 1000);
 }
 
 init();
