@@ -6,7 +6,8 @@ function realTime(){
     const hours = date.getHours();
     const minutes = date.getMinutes();
     
-    timeTitle.innerText = `${hours}:${minutes}`;
+    timeTitle.innerText = `${hours < 12 ? `오전 ${hours}` : `오후 ${hours}`}:${
+        minutes < 10 ? `0${minutes}` : minutes}`;
     }
     
 function init (){

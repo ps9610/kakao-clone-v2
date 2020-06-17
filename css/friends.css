@@ -7,9 +7,29 @@
 
 .friends__plus .friends__title,
 .friends__list .friends__title{
-    font-size: 14px;
     opacity: 0.6;
+    font-size: 13px;
     margin-bottom: 12px;
+}
+
+.friends__plus .friends__anglebox,
+.friends__friend .friend__anglebox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.friend__anglebox .friend__icon{
+    color: grey;
+    font-size: 14px;
+}
+
+.friends__icon i {
+    color: grey;
+    font-size: 16px;
+}
+
+.friends__plus i {
+    cursor: pointer;
 }
 
 .friends li:nth-child(3), 

@@ -1,50 +1,94 @@
-.more .more__btn-list,
-.more .more__suggestions-list {
+.more .more__btn-list {
     margin: 30px 0px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 10px;
+    flex-wrap: wrap;
 }
 
-.more__btn-list .more__btn,
-.more .suggestion {
-    margin-right: 40px;
+.more .friend__column .friend__mybox, .friend__con{
+    margin: 5px;
+    border: 1px #eee solid;
+    padding: 10px 15px 10px 15px;
+    border-radius: 40px;
+}
+
+.friend {
+    margin-bottom: 15px;
+}
+
+.more .more__pay {
+    background-color: #eee;
+    margin: 5px;
+    padding: 12px 15px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more__pay .pay__column{
+    background-color: white;
+    padding: 7px 15px;
+    border-radius: 30px;
+}    
+
+.more__pay .pay__column .pay-comment{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.more__pay .pay__select span:nth-child(1){
+    border-right: 1px solid grey;
+}
+
+.more__pay .pay__select span:nth-child(3){
+    border-left: 1px solid grey;
+}
+
+.more__pay .pay__select span{
+    padding: 0px 7px; 
+}
+
+.pay__comment, .pay__column i {
+    vertical-align: middle;
+}
+
+.more__btn-list .more__btn {
+    margin: 0px 30px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-
+    line-height: 30px;
 }
 
-.more__btn .more__btn-title{
-    font-size: 14px;
-    margin-top: 15px;
+.more__btn-list .more__btn {
+    margin-bottom: 30px;
 }
 
-.more .more__suggestions {
-      border-top: 1px solid #f7f7f7;
-      padding-top: 20px;
-}
-
-.more .more__title{
-    opacity: 0.8;
-    margin-bottom: 20px;
+.more__btn-list .more__btn-title {
     font-size: 12px;
 }
 
-.suggestion .suggestion__title {
-    font-size: 12px;
-    margin-top: 15px;
+.more__btn i {
+    opacity: 0.5;
 }
 
-.suggestion .suggestion__icon {
-    background-color: #fce006;
-    padding: 10px;
-    display: flex;
-    border-radius: 10px;
+.more__btn:nth-child(5) i{
+    opacity: 1;
+    color: #F7AC1D;
 }
 
-.suggestion__icon {
-    font-size: 20px;
-    color: white;
+.more__btn:nth-child(9) i,
+.more__btn:nth-child(10) i {
+    opacity: 1;
+    color: #F2DA00;
 }
+
+.more__btn:nth-child(8) i,
+.more__btn:nth-child(11) i{
+opacity: 1;
+color:#00C73A;
+}
+
