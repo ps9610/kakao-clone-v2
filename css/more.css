@@ -1,9 +1,15 @@
 .more .more__btn-list {
-    margin: 30px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    margin: 30px auto;
+    display: grid;
+    grid-template-rows: repeat(3, 110px);
+    grid-template-columns: repeat(4, 100px);
+    align-content: space-between;
+    grid-template-areas: 
+    "content" "content" "content" "content"
+    "content" "content" "content" "content"
+    "content" "content" "content" "content"
+    "content" "content" "content" "content";
+    gap: 10px;
 }
 
 .more .friend__column .friend__mybox, .friend__con{
@@ -55,28 +61,28 @@
 }
 
 .more__btn-list .more__btn {
-    margin: 0px 30px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0px 30px;
     cursor: pointer;
     line-height: 30px;
 }
-/*
-항상 부모요소에 felx - wrap을 해준 다음에
+/* 항상 부모요소에 felx - wrap을 해준 다음에
 자식 요소에 margin으로 조절하면서
 div, span, li등의 요소들 정렬하기...
-*/
+=grid 속성으로 정리 가능 */
+
 .more__btn-list .more__btn {
     margin-bottom: 30px;
 }
 
 .more__btn-list .more__btn-title {
-    font-size: 12px;
+    font-size: 10px;
+    vertical-align: middle;
 }
 
 .more__btn i {
     opacity: 0.5;
+    grid-area: content;
+    vertical-align: middle;
 }
 
 .more__btn:nth-child(5) i{
