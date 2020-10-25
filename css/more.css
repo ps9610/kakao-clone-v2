@@ -7,7 +7,6 @@
     grid-template-areas: 
     "content" "content" "content" "content"
     "content" "content" "content" "content"
-    "content" "content" "content" "content"
     "content" "content" "content" "content";
     gap: 10px;
 }
@@ -56,8 +55,9 @@
     padding: 0px 7px; 
 }
 
-.pay__comment, .pay__column i {
+.pay__comment .pay__column i {
     vertical-align: middle;
+    text-align: center;
 }
 
 .more__btn-list .more__btn {
@@ -76,13 +76,12 @@ div, span, li등의 요소들 정렬하기...
 
 .more__btn-list .more__btn-title {
     font-size: 10px;
-    vertical-align: middle;
 }
 
 .more__btn i {
     opacity: 0.5;
-    grid-area: content;
     vertical-align: middle;
+    grid-area:content;
 }
 
 .more__btn:nth-child(5) i{
